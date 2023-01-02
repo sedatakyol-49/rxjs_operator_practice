@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="col-md-12">
+      <div class="flex-container nowrap">
+        <select class="flex-item" (change)="onFwChange($event)">
+          <label>Framework</label>
+          <option *ngFor="let n of framework" [value]="n">{{n}}</option>
+        </select>
+        <select class="flex-item"  (change)="onClChange($event)">
+          <label>Colors</label>
+          <option *ngFor="let n of color" [value]="n">{{n}}</option>
+        </select>
+      </div>
+  
+    </div>
+  </div>
