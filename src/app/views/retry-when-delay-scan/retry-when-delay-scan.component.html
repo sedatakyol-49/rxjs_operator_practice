@@ -1,1 +1,14 @@
-<p>retry-when-delay-scan works!</p>
+<div class="flex-container">
+   <button class="btn btn-primary" type="button" (click)="getData()">
+    <div class="loader" *ngIf="isBusy">Fetching Data</div>
+    <span *ngIf="!isBusy">Fetch Data</span>
+   </button>
+</div>
+
+<div class="row">
+   <ul>
+      <li *ngFor="let item of data$ | async">
+         {{item}}
+      </li>
+    </ul>
+</div>

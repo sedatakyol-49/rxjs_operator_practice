@@ -1,0 +1,41 @@
+.flex-container{
+    display:flex;
+}
+
+.flex-container>button{
+    text-align: center;
+    justify-content: center;
+    background-color: #04AA6D;
+    margin: 10px 10px 10px 40px;
+    padding: 10px;
+    font-size: 15px;
+    width: 100px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.flex-container>button:hover{
+  background-color: #3e8e41
+}
+
+.flex-containe>button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
